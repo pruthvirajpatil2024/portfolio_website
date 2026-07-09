@@ -37,53 +37,53 @@ const counterItems = [
 
 const logoIconsList = [
   {
-    imgPath: "/images/logos/company-logo-1.png",
+    imgPath: "/images/logos/company-logo-1.webp",
   },
   {
-    imgPath: "/images/logos/company-logo-2.png",
+    imgPath: "/images/logos/company-logo-2.webp",
   },
   {
-    imgPath: "/images/logos/company-logo-3.png",
+    imgPath: "/images/logos/company-logo-3.webp",
   },
   {
-    imgPath: "/images/logos/company-logo-4.png",
+    imgPath: "/images/logos/company-logo-4.webp",
   },
   {
-    imgPath: "/images/logos/company-logo-5.png",
+    imgPath: "/images/logos/company-logo-5.webp",
   },
   {
-    imgPath: "/images/logos/company-logo-6.png",
+    imgPath: "/images/logos/company-logo-6.webp",
   },
   {
-    imgPath: "/images/logos/company-logo-7.png",
+    imgPath: "/images/logos/company-logo-7.webp",
   },
   {
-    imgPath: "/images/logos/company-logo-8.png",
+    imgPath: "/images/logos/company-logo-8.webp",
   },
   {
-    imgPath: "/images/logos/company-logo-9.png",
+    imgPath: "/images/logos/company-logo-9.webp",
   },
   {
-    imgPath: "/images/logos/company-logo-10.png",
+    imgPath: "/images/logos/company-logo-10.webp",
   },
   {
-    imgPath: "/images/logos/company-logo-11.png",
+    imgPath: "/images/logos/company-logo-11.webp",
   },
 ];
 
 const abilities = [
   {
-    imgPath: "/images/analysis.png",
+    imgPath: "/images/analysis.webp",
     title: "Analytical Thinking",
     desc: "Analyzing system behavior, edge cases, and performance to improve outcomes.",
   },
   {
-    imgPath: "/images/problem-solving.png",
+    imgPath: "/images/problem-solving.webp",
     title: "Problem Solving",
     desc: "Breaking down complex problems and solving them using structured and logical approaches.",
   },
   {
-    imgPath: "/images/collaboration.png",
+    imgPath: "/images/collaboration.webp",
     title: "Collaboration & Communication",
     desc: "Effectively communicating ideas and collaborating in teams during projects and hackathons.",
   },
@@ -92,7 +92,7 @@ const abilities = [
 const techStackImgs = [
   {
     name: "React Developer",
-    imgPath: "/images/logos/react.png",
+    imgPath: "/images/logos/react.webp",
   },
   {
     name: "Python Developer",
@@ -100,11 +100,11 @@ const techStackImgs = [
   },
   {
     name: "Backend Developer",
-    imgPath: "/images/logos/node.png",
+    imgPath: "/images/logos/node.webp",
   },
   {
     name: "Interactive Developer",
-    imgPath: "/images/logos/three.png",
+    imgPath: "/images/logos/three.webp",
   },
   {
     name: "Project Manager",
@@ -149,8 +149,8 @@ const expCards = [
   {
   review:
     "Contributed to building scalable and responsive web applications using the MERN stack, focusing on clean UI, performance, and real-world usability.",
-  imgPath: "/images/exp1.png",
-  logoPath: "/images/logo1.png",
+  imgPath: "/images/exp1.webp",
+  logoPath: "/images/logo1.webp",
   title: "MERN Stack Intern",
   date: "Sep 2025 – Dec 2025",
   responsibilities: [
@@ -162,16 +162,16 @@ const expCards = [
   },
   {
   review:
-    "Played a key role in ensuring the quality and reliability of AI agents by creating high-quality datasets and validating model outputs across diverse scenarios.",
-  imgPath: "/images/exp2.png",
-  logoPath: "/images/logo2.png",
-  title: "AI Agent QA",
+    "Contributed to the development and maintenance of scalable web applications by building responsive user interfaces, developing robust backend APIs, and collaborating with cross-functional teams to deliver reliable, high-quality software solutions.",
+  imgPath: "/images/exp2.webp",
+  logoPath: "/images/logo2.webp",
+  title: "Full Stack Developer",
   date: "Jan 2026 – Present",
   responsibilities: [
-    "Created and curated high-quality datasets to support AI agent training and evaluation.",
-    "Performed data labeling and annotation to improve model accuracy and consistency.",
-    "Tested AI agent responses across edge cases to identify errors, bias, and inconsistencies.",
-    "Collaborated with development teams to provide feedback and improve AI agent behavior.",
+    "Developed responsive and user-friendly web interfaces using modern frontend technologies.",
+  "Built and maintained RESTful APIs and backend services to support application functionality.",
+  "Integrated databases, authentication systems, and third-party APIs into web applications.",
+  "Collaborated with designers and developers to implement new features, optimize performance, and resolve bugs.",
   ],
 },
 ];
@@ -179,11 +179,11 @@ const expCards = [
 const expLogos = [
   {
     name: "logo1",
-    imgPath: "/images/logo1.png",
+    imgPath: "/images/logo1.webp",
   },
   {
     name: "logo2",
-    imgPath: "/images/logo2.png",
+    imgPath: "/images/logo2.webp",
   },
 ];
 
@@ -193,42 +193,42 @@ const testimonials = [
     mentions: "@techiepiyush",
     review:
       "During the interview process at Autonex.AI, Pruthviraj demonstrated strong problem-solving skills and a clear understanding of real-world technical challenges. His approach to reasoning and clarity of thought stood out positively.",
-    imgPath: "/images/client1.png",
+    imgPath: "/images/client1.webp",
   },
   {
     name: "Khushi",
     mentions: "@khushi-07",
     review:
       "I initially connected with Pruthviraj from the HR side, and his professionalism, communication skills, and eagerness to learn made the interaction very smooth. He showed genuine interest in the role and aligned well with our expectations.",
-    imgPath: "/images/client3.png",
+    imgPath: "/images/client3.webp",
   },
   {
     name: "Nikhil Gawade",
     mentions: "@code360",
     review:
       "Pruthviraj’s automation project caught our attention due to its practical value and clean implementation. His work demonstrated how automation could directly support our internal workflows, and his technical mindset was impressive.",
-    imgPath: "/images/client2.png",
+    imgPath: "/images/client2.webp",
   },
   {
     name: "Atharv Joundal",
     mentions: "@AJ007",
     review:
       "Working with Pruthviraj on college projects was a great experience. He consistently contributed thoughtful ideas, handled his responsibilities well, and helped the team move forward during challenging phases of the project.",
-    imgPath: "/images/client5.png",
+    imgPath: "/images/client5.webp",
   },
   {
     name: "Pratik Nikam",
     mentions: "@nikampratik",
     review:
       "As a peer, I found Pruthviraj to be reliable and technically sound. He actively participated in discussions, took ownership of tasks, and ensured that project deliverables were completed on time.",
-    imgPath: "/images/client4.png",
+    imgPath: "/images/client4.webp",
   },
   {
     name: "Chinmay Kamlaskar",
     mentions: "@coder-chinmay",
     review:
       "Collaborating with Pruthviraj on academic projects was productive and motivating. His ability to understand requirements, debug issues, and support teammates made him a valuable contributor to the team.",
-    imgPath: "/images/client6.png",
+    imgPath: "/images/client6.webp",
   },
 ];
 
@@ -236,19 +236,19 @@ const testimonials = [
 const socialImgs = [
   {
     name: "linkedin",
-    imgPath: "/images/linkedin.png",
+    imgPath: "/images/linkedin.webp",
   },
   {
     name: "github",
-    imgPath: "/images/github.jpeg",
+    imgPath: "/images/github.webp",
   },
   {
     name: "leetcode",
-    imgPath: "/images/leetcode.jpeg",
+    imgPath: "/images/leetcode.webp",
   },
   {
     name: "codechef",
-    imgPath: "/images/codechef.jpeg",
+    imgPath: "/images/codechef.webp",
   },
 ];
 

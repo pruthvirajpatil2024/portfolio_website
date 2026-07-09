@@ -14,6 +14,8 @@ const FeatureCards = () => (
               src={imgPath}
               alt={title}
               className="w-12 h-12 scale-150 object-contain"
+              loading="lazy"
+              decoding="async"
             />
           </div>
 
