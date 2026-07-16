@@ -81,7 +81,7 @@ section {
   }
 
   .hero-layout {
-    @apply relative z-10 xl:mt-20 mt-32 md:h-dvh h-[80vh] flex xl:items-center items-start justify-center;
+    @apply relative z-10 xl:mt-20 mt-32 xl:h-dvh h-auto flex flex-col xl:flex-row items-start xl:items-center justify-center gap-10 xl:gap-0;
   }
 
   .hero-text {
@@ -99,7 +99,10 @@ section {
   }
 
   .hero-3d-layout {
-    @apply xl:w-[70%] w-full h-full min-h-[50vh] absolute xl:-top-20 top-24 xl:-right-20 right-0;
+    /* Purely decorative (GSAP-driven, no OrbitControls) - pointer-events-none
+       so this box never blocks clicks on the header content it overlaps at
+       xl+ widths. */
+    @apply relative w-full h-72 sm:h-96 xl:w-[70%] xl:h-full xl:min-h-[50vh] xl:absolute xl:-top-20 xl:-right-20 xl:right-0 pointer-events-none;
   }
 
   .navbar {
@@ -202,6 +205,14 @@ section {
     }
   }
 
+  .project-links {
+    @apply flex flex-wrap items-center gap-3 mt-4;
+
+    a {
+      @apply flex items-center gap-2 px-4 py-2 rounded-full border border-black-50 bg-black-100 text-sm font-medium text-white-50 transition-all duration-300 hover:bg-black-50 hover:text-white;
+    }
+  }
+
   .cta-wrapper {
     @apply relative z-20 cursor-pointer;
   }
@@ -234,8 +245,68 @@ section {
     @apply border border-black-50 bg-black-100;
   }
 
+  .testimonial-scroll-row {
+    @apply flex gap-5 overflow-x-auto snap-x snap-mandatory pb-4;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-white-50) transparent;
+
+    &::-webkit-scrollbar {
+      height: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--color-white-50);
+      border-radius: 999px;
+    }
+  }
+
+  .testimonial-scroll-item {
+    @apply w-[85vw] max-w-sm flex-none snap-center;
+  }
+
+  .achievement-card {
+    @apply h-72 cursor-pointer;
+    perspective: 1200px;
+  }
+
+  .achievement-card-inner {
+    @apply relative w-full h-full transition-transform duration-700;
+    transform-style: preserve-3d;
+
+    .achievement-card:hover &,
+    .achievement-card.is-flipped & {
+      transform: rotateY(180deg);
+    }
+  }
+
+  .achievement-face {
+    @apply absolute inset-0 flex flex-col items-center justify-center text-center p-8 transition-colors duration-500;
+    backface-visibility: hidden;
+
+    .achievement-card:hover &,
+    .achievement-card.is-flipped & {
+      @apply border-amber-400/60;
+    }
+  }
+
+  .achievement-back {
+    transform: rotateY(180deg);
+  }
+
   .marquee-item {
     @apply md:w-40 w-32;
+  }
+
+  .scan-grid {
+    @apply opacity-20;
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.6) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.6) 1px, transparent 1px);
+    background-size: 24px 24px;
   }
 
   .timeline-wrapper {
@@ -312,11 +383,7 @@ section {
       @apply flex items-center justify-center gap-5;
 
       .icon {
-        @apply border border-black-50 bg-black-100 flex justify-center items-center rounded-xl size-10 md:size-12 cursor-pointer transition-all duration-500 hover:bg-black-50;
-      }
-
-      img {
-        @apply inline-block;
+        @apply border border-black-50 bg-black-100 text-white-50 flex justify-center items-center rounded-xl size-10 md:size-12 cursor-pointer transition-all duration-500 hover:bg-black-50 hover:text-white;
       }
     }
   }

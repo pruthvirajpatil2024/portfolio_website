@@ -1,4 +1,17 @@
 import { useRef } from "react";
+import { FaRegStar, FaStar, FaStarHalfAlt } from "react-icons/fa";
+
+const renderStars = (rating = 5) =>
+  Array.from({ length: 5 }, (_, i) => {
+    const position = i + 1;
+    if (rating >= position) {
+      return <FaStar key={position} className="size-5 text-amber-400" />;
+    }
+    if (rating >= position - 0.5) {
+      return <FaStarHalfAlt key={position} className="size-5 text-amber-400" />;
+    }
+    return <FaRegStar key={position} className="size-5 text-white-50/30" />;
+  });
 
 const GlowCard = ({ card, index, children }) => {
   // refs for all the cards
@@ -33,11 +46,7 @@ const GlowCard = ({ card, index, children }) => {
       className="card card-border timeline-card rounded-xl p-10 mb-5 break-inside-avoid-column"
     >
       <div className="glow"></div>
-      <div className="flex items-center gap-1 mb-5">
-        {Array.from({ length: 5 }, (_, i) => (
-          <img key={i} src="/images/star.png" alt="star" className="size-5" />
-        ))}
-      </div>
+      <div className="flex items-center gap-1 mb-5">{renderStars(card.rating)}</div>
       <div className="mb-5">
         <p className="text-white-50 text-lg">{card.review}</p>
       </div>

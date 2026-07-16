@@ -1,3 +1,5 @@
+import { siAngular, siExpress, siSpringboot, siTypescript } from "simple-icons";
+
 const navLinks = [
   {
     name: "Work",
@@ -10,6 +12,10 @@ const navLinks = [
   {
     name: "Skills",
     link: "#skills",
+  },
+  {
+    name: "Achievements",
+    link: "#achievements",
   },
   {
     name: "Testimonials",
@@ -36,56 +42,34 @@ const counterItems = [
 ];
 
 const logoIconsList = [
-  {
-    imgPath: "/images/logos/company-logo-1.webp",
-  },
-  {
-    imgPath: "/images/logos/company-logo-2.webp",
-  },
-  {
-    imgPath: "/images/logos/company-logo-3.webp",
-  },
-  {
-    imgPath: "/images/logos/company-logo-4.webp",
-  },
-  {
-    imgPath: "/images/logos/company-logo-5.webp",
-  },
-  {
-    imgPath: "/images/logos/company-logo-6.webp",
-  },
-  {
-    imgPath: "/images/logos/company-logo-7.webp",
-  },
-  {
-    imgPath: "/images/logos/company-logo-8.webp",
-  },
-  {
-    imgPath: "/images/logos/company-logo-9.webp",
-  },
-  {
-    imgPath: "/images/logos/company-logo-10.webp",
-  },
-  {
-    imgPath: "/images/logos/company-logo-11.webp",
-  },
+  { name: "expressjs", label: "Express.js", color: "#FFFFFF" },
+  { name: "html5", label: "HTML5", color: "#E34F26" },
+  { name: "css3", label: "CSS3", color: "#1572B6" },
+  { name: "cplusplus", label: "C++", color: "#00599C" },
+  { name: "java", label: "Java", color: "#F89820" },
+  { name: "typescript", label: "TypeScript", color: "#3178C6" },
+  { name: "javascript", label: "JavaScript", color: "#F7DF1E" },
+  { name: "selenium", label: "Selenium", color: "#43B02A" },
+  { name: "sql", label: "SQL", color: "#4479A1" },
+  { name: "aws", label: "AWS", color: "#FF9900" },
+  { name: "react", label: "React", color: "#61DAFB" },
 ];
 
 const abilities = [
   {
-    imgPath: "/images/analysis.webp",
-    title: "Analytical Thinking",
-    desc: "Analyzing system behavior, edge cases, and performance to improve outcomes.",
+    icon: "adaptability",
+    title: "Adaptability",
+    desc: "Quickly adjusting to new tools, technologies, and changing requirements without losing momentum.",
   },
   {
-    imgPath: "/images/problem-solving.webp",
+    icon: "resilience",
+    title: "Resilience",
+    desc: "Staying focused and consistent under pressure, learning from setbacks, and pushing through challenges.",
+  },
+  {
+    icon: "problem-solving",
     title: "Problem Solving",
     desc: "Breaking down complex problems and solving them using structured and logical approaches.",
-  },
-  {
-    imgPath: "/images/collaboration.webp",
-    title: "Collaboration & Communication",
-    desc: "Effectively communicating ideas and collaborating in teams during projects and hackathons.",
   },
 ];
 
@@ -120,28 +104,35 @@ const techStackIcons = [
     rotation: [0, 0, 0],
   },
   {
-    name: "AI Agent Developer",
-    modelPath: "/models/python-transformed.glb",
-    scale: 0.8,
+    name: "Angular Developer",
+    iconPath: siAngular.path,
+    // Angular's current brand mark is near-black; use the classic Angular
+    // red instead so the logo is actually visible on the dark card.
+    iconColor: "#DD0031",
+    scale: 0.09,
     rotation: [0, 0, 0],
   },
   {
-    name: "Backend Developer",
-    modelPath: "/models/node-transformed.glb",
-    scale: 5,
-    rotation: [0, -Math.PI / 2, 0],
-  },
-  {
-    name: "Interactive Developer",
-    modelPath: "/models/three.js-transformed.glb",
-    scale: 0.05,
+    name: "TypeScript Developer",
+    iconPath: siTypescript.path,
+    iconColor: `#${siTypescript.hex}`,
+    scale: 0.09,
     rotation: [0, 0, 0],
   },
   {
-    name: "Project Manager",
-    modelPath: "/models/git-svg-transformed.glb",
-    scale: 0.05,
-    rotation: [0, -Math.PI / 4, 0],
+    name: "Express Developer",
+    iconPath: siExpress.path,
+    // Express's mark is a black wordmark; use white so it reads on the card.
+    iconColor: "#FFFFFF",
+    scale: 0.09,
+    rotation: [0, 0, 0],
+  },
+  {
+    name: "Spring Boot Developer",
+    iconPath: siSpringboot.path,
+    iconColor: `#${siSpringboot.hex}`,
+    scale: 0.09,
+    rotation: [0, 0, 0],
   },
 ];
 
@@ -194,6 +185,7 @@ const testimonials = [
     review:
       "During the interview process at Autonex.AI, Pruthviraj demonstrated strong problem-solving skills and a clear understanding of real-world technical challenges. His approach to reasoning and clarity of thought stood out positively.",
     imgPath: "/images/client1.webp",
+    rating: 5,
   },
   {
     name: "Khushi",
@@ -201,6 +193,7 @@ const testimonials = [
     review:
       "I initially connected with Pruthviraj from the HR side, and his professionalism, communication skills, and eagerness to learn made the interaction very smooth. He showed genuine interest in the role and aligned well with our expectations.",
     imgPath: "/images/client3.webp",
+    rating: 4.5,
   },
   {
     name: "Nikhil Gawade",
@@ -208,6 +201,7 @@ const testimonials = [
     review:
       "Pruthviraj’s automation project caught our attention due to its practical value and clean implementation. His work demonstrated how automation could directly support our internal workflows, and his technical mindset was impressive.",
     imgPath: "/images/client2.webp",
+    rating: 4,
   },
   {
     name: "Atharv Joundal",
@@ -215,6 +209,7 @@ const testimonials = [
     review:
       "Working with Pruthviraj on college projects was a great experience. He consistently contributed thoughtful ideas, handled his responsibilities well, and helped the team move forward during challenging phases of the project.",
     imgPath: "/images/client5.webp",
+    rating: 5,
   },
   {
     name: "Pratik Nikam",
@@ -222,6 +217,7 @@ const testimonials = [
     review:
       "As a peer, I found Pruthviraj to be reliable and technically sound. He actively participated in discussions, took ownership of tasks, and ensured that project deliverables were completed on time.",
     imgPath: "/images/client4.webp",
+    rating: 4.5,
   },
   {
     name: "Chinmay Kamlaskar",
@@ -229,26 +225,47 @@ const testimonials = [
     review:
       "Collaborating with Pruthviraj on academic projects was productive and motivating. His ability to understand requirements, debug issues, and support teammates made him a valuable contributor to the team.",
     imgPath: "/images/client6.webp",
+    rating: 4,
   },
 ];
 
 
-const socialImgs = [
+const achievements = [
+  {
+    icon: "trophy",
+    title: "Myntra Ramp-Up",
+    highlight: "Finalist",
+    detail:
+      "Selected as a finalist in Myntra's Ramp-Up program, standing out among a highly competitive nationwide applicant pool.",
+  },
+  {
+    icon: "branch",
+    title: "Open Source",
+    highlight: "3-4 PRs Merged",
+    detail:
+      "Contributed pull requests to CARE_Fe and Rocket.Chat, collaborating with maintainers on real, large-scale production codebases.",
+  },
+  {
+    icon: "paper",
+    title: "Research",
+    highlight: "2 Papers Published",
+    detail:
+      "Authored and published 2 research papers, contributing original work to the academic community.",
+  },
+];
+
+const socialLinks = [
   {
     name: "linkedin",
-    imgPath: "/images/linkedin.webp",
+    url: "https://www.linkedin.com/in/pruthviraj-patil-developer/",
   },
   {
     name: "github",
-    imgPath: "/images/github.webp",
+    url: "https://github.com/pruthvirajpatil2024/",
   },
   {
     name: "leetcode",
-    imgPath: "/images/leetcode.webp",
-  },
-  {
-    name: "codechef",
-    imgPath: "/images/codechef.webp",
+    url: "https://leetcode.com/u/pruthvirajpatil7686/",
   },
 ];
 
@@ -259,8 +276,9 @@ export {
   counterItems,
   expCards,
   expLogos,
+  achievements,
   testimonials,
-  socialImgs,
+  socialLinks,
   techStackIcons,
   techStackImgs,
   navLinks,

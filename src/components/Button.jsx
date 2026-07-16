@@ -1,13 +1,14 @@
 /**
  * A reusable CTA button component.
- * When clicked, it scrolls smoothly to the section with ID "counter",
+ * If `href` is passed, it behaves as a plain link (e.g. a file download).
+ * Otherwise it scrolls smoothly to the section with ID "counter",
  * with a small offset from the top for better visual placement.
  */
 
-const Button = ({ text, className, id }) => {
-  return (
-    <a
-      onClick={(e) => {
+const Button = ({ text, className, id, href, download }) => {
+  const handleClick = href
+    ? undefined
+    : (e) => {
         e.preventDefault(); // Stop the link from jumping instantly
 
         const target = document.getElementById("counter"); // Find the section with ID "counter"
@@ -24,7 +25,13 @@ const Button = ({ text, className, id }) => {
           // Scroll smoothly to that position
           window.scrollTo({ top, behavior: "smooth" });
         }
-      }}
+      };
+
+  return (
+    <a
+      href={href}
+      download={download}
+      onClick={handleClick}
       className={`${className ?? ""} cta-wrapper`} // Add base + extra class names
     >
       <div className="cta-button group">

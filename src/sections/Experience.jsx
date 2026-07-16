@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -9,6 +10,12 @@ import GlowCard from "../components/GlowCard";
 gsap.registerPlugin(ScrollTrigger);
 
 const Experience = () => {
+  const containerRef = useRef(null);
+
+  // Scoped to containerRef so these selectors only ever match elements
+  // inside this section - GlowCard reuses the same "timeline-card" class
+  // for the Testimonials cards, and without scoping this animation would
+  // also grab those and leave them stuck at their pre-animation state.
   useGSAP(() => {
     // Loop through each timeline card and animate them in
     // as the user scrolls to each card
@@ -87,10 +94,11 @@ const Experience = () => {
         },
       });
     }, "<"); // position parameter - insert at the start of the animation
-  }, []);
+  }, { scope: containerRef });
 
   return (
     <section
+      ref={containerRef}
       id="experience"
       className="flex-center md:mt-40 mt-20 section-padding xl:px-0"
     >
