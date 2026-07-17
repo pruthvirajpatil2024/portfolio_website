@@ -139,14 +139,14 @@ const techStackIcons = [
 const expCards = [
   {
   review:
-    "Contributed to building scalable and responsive web applications using the MERN stack, focusing on clean UI, performance, and real-world usability.",
+    "Contributed to building scalable and responsive web applications using the Full stack, focusing on clean UI, performance, and real-world usability.",
   imgPath: "/images/exp1.webp",
   logoPath: "/images/logo1.webp",
-  title: "MERN Stack Intern",
-  date: "Sep 2025 – Dec 2025",
+  title: "Full Stack Intern",
+  date: "Oct 2025 – Dec 2025",
   responsibilities: [
     "Built responsive web applications using React, JavaScript, HTML, CSS, and Material UI.",
-    "Integrated REST APIs and connected frontend components with an Express.js backend.",
+    "Integrated REST APIs and connected frontend components with an Express.js and Spring Boot backend.",
     "Ensured cross-browser compatibility and accessibility across multiple devices.",
     "Collaborated with team members to deliver user-focused features and improve overall UI performance.",
   ],
@@ -156,8 +156,8 @@ const expCards = [
     "Contributed to the development and maintenance of scalable web applications by building responsive user interfaces, developing robust backend APIs, and collaborating with cross-functional teams to deliver reliable, high-quality software solutions.",
   imgPath: "/images/exp2.webp",
   logoPath: "/images/logo2.webp",
-  title: "Full Stack Developer",
-  date: "Jan 2026 – Present",
+  title: "Full Stack Intern",
+  date: "Jan 2026 – July 2026",
   responsibilities: [
     "Developed responsive and user-friendly web interfaces using modern frontend technologies.",
   "Built and maintained RESTful APIs and backend services to support application functionality.",

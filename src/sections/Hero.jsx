@@ -63,7 +63,7 @@ const Hero = () => {
             </div>
 
             <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-              Hi, I’m Pruthviraj — a MERN Stack Developer with a strong passion for building modern, scalable web experiences.
+              Hi, I’m Pruthviraj — a Full Stack Developer with a strong passion for building modern, scalable web experiences.
             </p>
 
             <div className="flex flex-wrap items-center gap-4">
