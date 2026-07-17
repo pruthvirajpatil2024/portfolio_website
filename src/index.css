@@ -301,14 +301,6 @@ section {
     @apply md:w-40 w-32;
   }
 
-  .scan-grid {
-    @apply opacity-20;
-    background-image:
-      linear-gradient(rgba(255, 255, 255, 0.6) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255, 255, 255, 0.6) 1px, transparent 1px);
-    background-size: 24px 24px;
-  }
-
   .timeline-wrapper {
     @apply absolute top-0 xl:left-[35.5vw] md:left-10 left-5 h-full flex justify-center;
   }

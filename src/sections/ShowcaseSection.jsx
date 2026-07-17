@@ -4,8 +4,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
-import { MdOutlineCameraAlt } from "react-icons/md";
-import { TbBrain } from "react-icons/tb";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -104,26 +102,13 @@ const AppShowcase = () => {
             </div>
 
             <div className="project" ref={aiProctoringRef}>
-              {/* No screenshot available yet, so this is a custom icon
-                  composition (360deg camera + ML model) standing in for one. */}
-              <div className="image-wrapper bg-gradient-to-br from-[#0f1024] to-[#1b1b3a] flex items-center justify-center">
-                <div className="absolute inset-0 scan-grid rounded-xl" />
-
-                <div className="relative flex items-center gap-6">
-                  <div className="relative flex items-center justify-center">
-                    <span className="absolute inline-flex size-20 rounded-full bg-cyan-400/30 animate-ping" />
-                    <div className="relative bg-cyan-500/20 border border-cyan-400/50 rounded-full p-4">
-                      <MdOutlineCameraAlt className="text-4xl text-cyan-300" />
-                    </div>
-                    <span className="absolute -bottom-2 -right-2 bg-cyan-400 text-black text-[10px] font-bold px-1.5 py-0.5 rounded-full">
-                      360°
-                    </span>
-                  </div>
-
-                  <div className="bg-purple-500/20 border border-purple-400/50 rounded-full p-4">
-                    <TbBrain className="text-4xl text-purple-300" />
-                  </div>
-                </div>
+              <div className="image-wrapper bg-[#141433]">
+                <img
+                  src="/images/ai-proctoring.webp"
+                  alt="AI Proctoring System Illustration"
+                  loading="lazy"
+                  decoding="async"
+                />
               </div>
               <h2>AI Proctoring System — 360° Camera & ML Models</h2>
               <ProjectLinks
